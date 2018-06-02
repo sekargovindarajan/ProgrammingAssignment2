@@ -66,7 +66,7 @@ cacheSolve <- function(cacheMtx, ...) {
    }
    
    # else compute inverse and cache it
-   invMtx <- solve(cacheMtx$get(), ...)
+   invMtx <- solve(cacheMtx$get())
    cacheMtx$setInverse(invMtx)
    
    # return inverse
